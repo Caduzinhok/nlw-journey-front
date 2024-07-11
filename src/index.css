@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+    ---rdp-accent-color: #BEF264;
+}
 
 * {
     min-width: 0;
@@ -9,3 +12,5 @@
 input{
     color-scheme:dark
 }
+
+
