@@ -18,10 +18,7 @@ export function CreateTripPage() {
     const [ownerEmail, setOwnerEmail] = useState('')
     const [eventStartAndEndDates, setEventStartAndEndDates] = useState<DateRange | undefined>()
 
-    const [emailsToInvite, setEmailsToInvite] = useState([
-        'carlosdestroy1@gmail.com',
-        'teste123@gmail.com'
-    ])
+    const [emailsToInvite, setEmailsToInvite] = useState(['testes@acme.com'])
 
 
     function openGuestsInput() {
@@ -60,6 +57,7 @@ export function CreateTripPage() {
         if (emailsToInvite.includes(email)) {
             return
         }
+        
         setEmailsToInvite([...emailsToInvite, email])
 
         event.currentTarget.reset()
